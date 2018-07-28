@@ -23,7 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '127.0.0.1:8080/cicool_clone';
+//$config['base_url'] = '127.0.0.1:8080/cicool_clone';
+$config['base_url'] = BASE_URL;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,7 +37,7 @@ $config['base_url'] = '127.0.0.1:8080/cicool_clone';
 |
 */
 ///$config['index_page'] = 'index.php';
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -137,7 +138,8 @@ $config['subclass_prefix'] = 'MY_';
 | Note: This will NOT disable or override the CodeIgniter-specific
 |	autoloading (application/config/autoload.php)
 */
-$config['composer_autoload'] = FALSE;
+//$config['composer_autoload'] = FALSE;
+$config['composer_autoload'] = realpath(APPPATH.'../vendor/autoload.php');
 
 /*
 |--------------------------------------------------------------------------
@@ -183,6 +185,9 @@ $config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
 | use segment based URLs.
 |
 */
+
+$config['allow_get_array'] = TRUE;
+
 $config['enable_query_strings'] = FALSE;
 $config['controller_trigger'] = 'c';
 $config['function_trigger'] = 'm';
@@ -200,7 +205,7 @@ $config['directory_trigger'] = 'd';
 |          for backwards compatibility purposes!
 |
 */
-$config['allow_get_array'] = TRUE;
+//$config['allow_get_array'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -325,7 +330,10 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+//$config['encryption_key'] = '';
+
+$config['encryption_key'] = '43e6e64135ac81be#cf2&8c0a6bd0$^8b07%**@e';
+
 
 /*
 |--------------------------------------------------------------------------
@@ -377,7 +385,6 @@ $config['encryption_key'] = '';
 | Other session cookie settings are shared with the rest of the application,
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
-*/
 $config['sess_driver'] = 'files';
 $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
@@ -385,6 +392,17 @@ $config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
+*/
+
+
+$config['sess_driver'] = 'files';
+$config['sess_cookie_name'] = '__8w4kow8ookc08800s88c8gks084kkow40kscos44';
+$config['sess_expiration'] = 86400;
+$config['sess_save_path'] = NULL;
+$config['sess_match_ip'] = FALSE;
+$config['sess_time_to_update'] = 900;
+$config['sess_regenerate_destroy'] = FALSE;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -448,13 +466,21 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_expire' = The number in seconds the token should expire.
 | 'csrf_regenerate' = Regenerate token on every submission
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
-*/
 $config['csrf_protection'] = FALSE;
 $config['csrf_token_name'] = 'csrf_test_name';
 $config['csrf_cookie_name'] = 'csrf_cookie_name';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
 $config['csrf_exclude_uris'] = array();
+*/
+
+$config['csrf_protection'] = TRUE;
+$config['csrf_token_name'] = '__ccscc80og48ggsgkogwk8k44sw8wwwwgcc04swow';
+$config['csrf_cookie_name'] = '__sks0c8so0ggw0cwwc4ocgw0gkog0k8gg4go4kg0k';
+$config['csrf_expire'] = 7200;
+$config['csrf_regenerate'] = FALSE;
+$config['csrf_exclude_uris'] = array();
+
 
 /*
 |--------------------------------------------------------------------------

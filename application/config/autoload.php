@@ -58,8 +58,11 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array();
+//$autoload['libraries'] = array();
+//$autoload['libraries'] = array('template', 'form_validation', 'OAuth2', 'console');
+$autoload['libraries'] = array('template', 'OAuth2', 'console');
 
+//!!!!!!form_validation?????
 /*
 | -------------------------------------------------------------------
 |  Auto-load Drivers
@@ -89,7 +92,13 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array();
+//$autoload['helper'] = array();
+
+//$autoload['helper'] = array('url', 'app', 'form', 'security', 'download', 'captcha', 'language');
+
+
+$autoload['helper'] = array('app');
+
 
 /*
 | -------------------------------------------------------------------
@@ -118,6 +127,7 @@ $autoload['config'] = array();
 |
 */
 $autoload['language'] = array();
+//$autoload['language'] = array('web');
 
 /*
 | -------------------------------------------------------------------
