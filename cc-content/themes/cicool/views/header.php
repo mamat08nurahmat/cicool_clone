@@ -8,8 +8,10 @@
     <meta name="description" content="<?= get_option('site_description'); ?>">
     <meta name="keywords" content="<?= get_option('keywords'); ?>">
     <meta name="author" content="<?= get_option('author'); ?>">
-
+<!--
     <title><?= site_name(); ?></title>
+-->
+    <title>MAT08NUR</title>
 
     <link href="<?= theme_asset(); ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 

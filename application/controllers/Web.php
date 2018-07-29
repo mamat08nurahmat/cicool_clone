@@ -18,11 +18,16 @@ class Web extends Front
 
 	public function index()
 	{
+/*
 		if (installation_complete()) {
 			$this->home();
 		} else {
 			redirect('wizzard/language','refresh');
 		}
+*/		
+			$this->home();
+
+
 	}
 
 	public function switch_lang($lang = 'english')

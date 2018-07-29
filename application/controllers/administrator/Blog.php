@@ -46,6 +46,13 @@ class Blog extends Admin
 		$this->template->title('Blog List');
 		$this->render('backend/standart/administrator/blog/blog_list', $this->data);
 	}
+
+	public function tes(){
+		
+		
+print_r('xxxxxxxxxxxxx');		
+		
+	}
 	
 	/**
 	* Add new blogs

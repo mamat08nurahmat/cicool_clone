@@ -8,7 +8,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 *| For authentication
 *|
 */
-class Auth extends Admin	
+//class Auth extends Admin	
+class Auth extends CI_Controller	
 {
 	
 	public function __construct()
@@ -22,6 +23,12 @@ class Auth extends Admin
 	*/
 	public function login()
 	{
+
+//print_r('auth login');
+				$data['error'] = TRUE;
+$this->template->build('backend/standart/administrator/login');
+	
+/*
 		if ($this->aauth->is_loggedin()) {
 			redirect('administrator/user/profile','refresh');
 		}
@@ -41,6 +48,17 @@ class Auth extends Admin
 			$data['error'] = validation_errors();
 		}
 		$this->template->build('backend/standart/administrator/login', $data);
+*/		
+	}
+	
+	public function cek_login(){
+		
+		
+//		if ($this->aauth->is_loggedin()) {
+			redirect('administrator/user/profile','refresh');
+//		}
+		
+		
 	}
 
 	/**

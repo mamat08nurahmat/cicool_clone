@@ -222,12 +222,12 @@ if(!function_exists('display_menu_admin')) {
 		   			$active = '';
 		   		}
 		   		if ($row->type == 'label') {
-		   			if ($ci->aauth->is_allowed($perms)) {
+//		   			if ($ci->aauth->is_allowed($perms)) {
 		        		$ret .= '<li class="header treeview">'._ent($row->label).'</li>';
-		        	}
+//		        	}
 		   		} else {
 			        if ($row->Count > 0) {
-			        	if ($ci->aauth->is_allowed($perms)) {
+			        	//if ($ci->aauth->is_allowed($perms)) {
 				        	$ret .= '<li class="'.$active.' "> 
 										        	<a href="'.site_url($row->link).'">';
 
@@ -247,9 +247,9 @@ if(!function_exists('display_menu_admin')) {
 
 							$ret .= display_menu_admin($row->id, $level + 1);
 							$ret .= "</li>";
-						}
+						//}
 			        } elseif ($row->Count==0) {
-			           if ($ci->aauth->is_allowed($perms)) {
+			           //if ($ci->aauth->is_allowed($perms)) {
 							$ret .= '<li class="'.$active.' "> 
 										        	<a href="'.site_url($row->link).'">';
 
@@ -266,7 +266,7 @@ if(!function_exists('display_menu_admin')) {
 							}
 
 							$ret .= "</li>";
-						}
+						//}
 			        }
 		   		}
 

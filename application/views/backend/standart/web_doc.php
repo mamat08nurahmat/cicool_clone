@@ -23,7 +23,7 @@
 <div class="wrapper">
    <header class="doc-header">
       <div class="container">
-         <h2 class="lone-header">Cicool WEB Documentation V-1.18</h2>
+         <h2 class="lone-header">MAT WEB Documentation V-1.18</h2>
       </div>
    </header>
    <section class="doc-content">

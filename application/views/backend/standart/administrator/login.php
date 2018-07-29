@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Cicool | Log in</title>
+  <title>MAT | Log in</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -44,8 +44,10 @@
             </div>
     <?php endif; ?>
     <?php
-    $message = $this->session->flashdata('f_message'); 
-    $type = $this->session->flashdata('f_type'); 
+//    $message = $this->session->flashdata('f_message'); 
+//    $type = $this->session->flashdata('f_type'); 
+      $message = 'LOGIN'; 
+      $type = 'AUTH'; 
     if ($message):
     ?>
    <div class="callout callout-<?= $type; ?>"  style="color:#C82626">

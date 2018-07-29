@@ -94,10 +94,10 @@ $autoload['drivers'] = array();
 */
 //$autoload['helper'] = array();
 
-//$autoload['helper'] = array('url', 'app', 'form', 'security', 'download', 'captcha', 'language');
+$autoload['helper'] = array('url', 'app', 'form', 'security', 'download', 'captcha', 'language');
 
 
-$autoload['helper'] = array('app');
+//$autoload['helper'] = array('app');
 
 
 /*
@@ -126,8 +126,8 @@ $autoload['config'] = array();
 | "codeigniter_lang.php" would be referenced as array('codeigniter');
 |
 */
-$autoload['language'] = array();
-//$autoload['language'] = array('web');
+//$autoload['language'] = array();
+$autoload['language'] = array('web');
 
 /*
 | -------------------------------------------------------------------

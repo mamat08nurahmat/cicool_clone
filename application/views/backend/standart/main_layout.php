@@ -6,8 +6,11 @@
   <meta name="description" content="<?= get_option('site_description'); ?>">
   <meta name="keywords" content="<?= get_option('keywords'); ?>">
   <meta name="author" content="<?= get_option('author'); ?>">
-
+<!--
   <title><?= get_option('site_name'); ?> | <?= $template['title']; ?></title>
+-->
+  <title>MAT | NURAHMAT </title>
+
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
   <link rel="stylesheet" href="<?= BASE_ASSET; ?>/admin-lte/bootstrap/css/bootstrap.min.css">
@@ -140,6 +143,7 @@
       <ul class="sidebar-menu  sidebar-admin tree"  data-widget="tree">
         
         <?= display_menu_admin(0, 1); ?>
+		
       </ul>
     </section>
 

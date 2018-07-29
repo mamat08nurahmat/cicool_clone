@@ -737,7 +737,7 @@ class Template
 				);
 			}
 		}
-
+/**/
 		// Can just run as usual
 		else
 		{
@@ -745,7 +745,7 @@ class Template
 			$content = ($this->_parser_enabled === TRUE AND $parse_view === TRUE)
 
 				// Parse that bad boy
-				? $this->_ci->parser->parse($view, $data, TRUE)
+				? $this->_ci->parser->parse($view, $data, TRUE)  //?????????????????
 
 				// None of that fancy stuff for me!
 				: $this->_ci->load->view($view, $data, TRUE);

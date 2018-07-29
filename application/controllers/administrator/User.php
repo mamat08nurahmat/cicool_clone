@@ -297,9 +297,10 @@ class User extends Admin
 	*/
 	public function profile()
 	{
-		$this->is_allowed('user_profile');
+//		$this->is_allowed('user_profile');
 
-		$this->data['user'] = $this->model_user->find($this->aauth->get_user()->id);
+//		$this->data['user'] = $this->model_user->find($this->aauth->get_user()->id);
+		$this->data['user'] = $this->model_user->find(1);
 
 		$this->template->title('User Profile');
 		$this->render('backend/standart/administrator/user/user_profile', $this->data);
